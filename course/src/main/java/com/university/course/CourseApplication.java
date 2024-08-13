@@ -9,12 +9,11 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 
 @SpringBootApplication
-
-//@EnableJpaRepositories(basePackages = "com.university.course.repository") 
 @EnableJpaRepositories(basePackages = "com.university.course.repository")
 @EnableAutoConfiguration
 @OpenAPIDefinition
 @EntityScan
+
 public class CourseApplication {
 
 	public static void main(String[] args) {

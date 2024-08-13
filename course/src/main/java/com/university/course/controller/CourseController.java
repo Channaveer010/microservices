@@ -65,10 +65,7 @@ public class CourseController {
 			    	@ApiResponse(responseCode = "404", description = "Course not found", content = @Content(mediaType = "application/json")),
 					@ApiResponse(responseCode = "500", description = "Internal server error", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class)))	
 	})
-	public Course createCourse(@RequestBody CourseRequest course) {
-		
-		return this.courseService.createNewCouse(course);
-
-		
+	public Course createCourse(@RequestBody CourseRequest course) {		
+		return this.courseService.createNewCouse(course);		
 	}
 }

@@ -1,15 +1,9 @@
 package com.university.course.domain;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
-import com.university.course.entity.CourseStatus;
 import com.university.course.enums.CourseStatuses;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
